@@ -12,6 +12,7 @@ import {
   AlertIOS,
 } from 'react-native';
 
+var reactCreateClass = require('create-react-class');
 var ViewPager = require('react-native-viewpager');
 //var ViewPager = require('./ViewPager');
 var deviceWidth = Dimensions.get('window').width;
@@ -32,7 +33,7 @@ function notifyMessage(msg: string) {
   }
 }
 
-var ImagesScreen = React.createClass({
+var ImagesScreen = reactCreateClass({
   getInitialState: function() {
     var dataSource = new ViewPager.DataSource({
       pageHasChanged: (p1, p2) => p1 !== p2,

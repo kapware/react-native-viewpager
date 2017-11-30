@@ -10,6 +10,7 @@ import {
   Image,
 } from 'react-native';
 
+var reactCreateClass = require('create-react-class');
 import ViewPager from 'react-native-viewpager';
 //var ViewPager = require('./ViewPager');
 var deviceWidth = Dimensions.get('window').width;
@@ -24,7 +25,7 @@ var IMGS = [
   'https://images.unsplash.com/photo-1440847899694-90043f91c7f9?h=1024'
 ];
 
-var TopScreen = React.createClass({
+var TopScreen = reactCreateClass({
   getInitialState: function() {
     var dataSource = new ViewPager.DataSource({
       pageHasChanged: (p1, p2) => p1 !== p2,

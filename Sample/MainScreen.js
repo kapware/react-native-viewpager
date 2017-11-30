@@ -7,10 +7,11 @@ import {
   View,
 } from 'react-native';
 
+var reactCreateClass = require('create-react-class');
 var TopScreen = require('./TopScreen');
 var BottomScreen = require('./BottomScreen');
 
-var MainScreen = React.createClass({
+var MainScreen = reactCreateClass({
 
   render: function() {
     return (

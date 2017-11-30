@@ -11,6 +11,7 @@ var {
   TouchableHighlight,
 } = React;
 
+var reactCreateClass = require('create-react-class');
 var ViewPager = require('react-native-viewpager');
 //var ViewPager = require('./ViewPager');
 var deviceWidth = Dimensions.get('window').width;
@@ -27,7 +28,7 @@ var IMGS = [
 
 var count = 0;
 
-var SimpleScreen = React.createClass({
+var SimpleScreen = reactCreateClass({
   getInitialState: function() {
     var dataSource = new ViewPager.DataSource({
       pageHasChanged: (p1, p2) => p1 !== p2,

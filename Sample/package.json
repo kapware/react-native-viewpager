@@ -6,6 +6,7 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
+    "create-react-class": "^15.6.2",
     "react": "^15.1.0",
     "react-native": "^0.27.2",
     "react-native-viewpager": "^0.2.1"

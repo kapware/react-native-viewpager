@@ -1,6 +1,6 @@
 {
   "name": "react-native-viewpager",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "ViewPager componnent for React Native",
   "main": "ViewPager.js",
   "scripts": {
@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/race604/react-native-viewpager#readme",
   "dependencies": {
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0",
     "react-timer-mixin": "^0.13.3",
     "warning": "^2.1.0"
   }
